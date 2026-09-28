@@ -323,13 +323,21 @@ li {
     width: 100%;
   }
 
-  #why .grid {
+  #why .grid > :first-child {
     text-align: center;
   }
 
+  .cp-why-grid {
+    grid-template-columns: 1fr;
+    max-width: 22rem;
+    margin-inline: auto;
+    width: 100%;
+    text-align: left;
+  }
+
   .cp-why-item {
-    justify-content: center;
-    text-align: center;
+    justify-content: flex-start;
+    text-align: left;
   }
 
   .cp-tms-copy,
@@ -594,7 +602,7 @@ li {
   margin-top: 2.5rem;
 }
 
-@media (min-width: 640px) {
+@media (min-width: 768px) {
   .cp-why-grid {
     grid-template-columns: repeat(2, 1fr);
   }
