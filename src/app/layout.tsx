@@ -8,7 +8,12 @@ export const metadata: Metadata = {
   description:
     "Personalized mental-health care with TMS, Spravato®, and medication management—all under one roof. Book a consultation to find a clearer path forward.",
   icons: {
-    icon: "/images/logo.png",
+    icon: [
+      { url: "/favicon.ico", sizes: "any" },
+      { url: "/images/favicon.png", type: "image/png" },
+    ],
+    shortcut: "/favicon.ico",
+    apple: "/images/apple-touch-icon.png",
   },
   keywords: [
     "Clear Path Mental Health",
